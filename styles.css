@@ -18,7 +18,7 @@ body, html {
 .title {
     font-size: 48px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #e50914; /* Netflix red */
+    color: #f9a825; /* Goldish yellow */
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
@@ -28,7 +28,7 @@ body, html {
 .subtitle {
     font-size: 24px;
     margin-bottom: 30px;
-    color: #ff5733; /* Changed color for "Who's Reading" */
+    color: #ff7043; /* Warm orange */
     text-align: center;
 }
 
@@ -50,6 +50,13 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for profile cards */
+.profile-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Profile images */
@@ -64,7 +71,7 @@ body, html {
 .profile-name {
     font-size: 18px;
     font-weight: bold;
-    color: #4caf50; /* Changed color for "Karaoud" and "Wer" */
+    color: #00796b; /* Deep teal */
     padding: 10px 0;
 }
 
@@ -83,44 +90,38 @@ body, html {
 /* Styling for "Open Me" caption */
 .open-me {
     font-size: 16px;
-    color: #4caf50;
+    color: #4caf50; /* Green */
     padding-top: 5px;
 }
 
-/* Video section styling */
-.video-section {
-    margin-top: 40px;
-    text-align: center;
-}
-
-/* Information box styling */
+/* Information Box for Contact Details */
 .info-box {
-    background-color: #f4f4f4;
+    background-color: #263238; /* Dark grayish-blue */
+    color: white;
     padding: 20px;
-    margin-top: 40px;
-    border-radius: 10px;
-    width: 80%;
+    margin-top: 30px;
+    width: 100%;
     max-width: 600px;
     text-align: center;
-}
-
-.info-box h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .info-box p {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 
 .social-icon {
     width: 30px;
     height: 30px;
-    margin: 0 10px;
+    margin: 5px;
+    display: inline-block;
 }
 
-.social-icon:hover {
-    opacity: 0.7;
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f9a825; /* Goldish color */
 }
+
+/
