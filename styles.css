@@ -1,0 +1,126 @@
+/* General reset for body */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #333;
+}
+
+/* Title styling */
+.title {
+    font-size: 48px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #e50914; /* Netflix red */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* "Who's Reading" text styling */
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ff5733; /* Changed color for "Who's Reading" */
+    text-align: center;
+}
+
+/* Container for profiles */
+.profiles-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Profile card styling */
+.profile-card {
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Profile images */
+.profile-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Profile names */
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4caf50; /* Changed color for "Karaoud" and "Wer" */
+    padding: 10px 0;
+}
+
+/* Styling for "Meme" card */
+.meme-card {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 100%;
+}
+
+/* Styling for "Open Me" caption */
+.open-me {
+    font-size: 16px;
+    color: #4caf50;
+    padding-top: 5px;
+}
+
+/* Video section styling */
+.video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Information box styling */
+.info-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
