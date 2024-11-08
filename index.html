@@ -14,9 +14,9 @@
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             height: 100vh;
             color: #333;
         }
@@ -43,6 +43,7 @@
         .profiles-container {
             display: flex;
             gap: 20px;
+            margin-bottom: 40px;
         }
 
         /* Profile card styling */
@@ -93,6 +94,40 @@
             color: #4caf50;
             padding-top: 5px;
         }
+
+        /* Info box styling */
+        .info-box {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Contact entry styling */
+        .contact {
+            margin-bottom: 10px;
+        }
+
+        /* Social media icons */
+        .social-media-icons {
+            margin-top: 10px;
+        }
+
+        .social-media-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media-icons img {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body style="background-image: url('https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg');">
@@ -105,22 +140,55 @@
 
     <!-- Container for the profiles -->
     <div class="profiles-container">
-        <!-- Profile 1 - Karaoud with updated color for name -->
+        <!-- Profile 1 - Karaoud -->
         <div class="profile-card" onclick="window.open('https://publuu.com/flip-book/706499/1570874', '_blank')">
             <img src="https://i.pinimg.com/564x/f3/f9/6d/f3f96db97d202a3b3d0aa875f8bff6e9.jpg" alt="Karaoud Profile">
             <div class="profile-name">Karaoud</div>
         </div>
 
-        <!-- Profile 2 - Wer with updated color for name -->
+        <!-- Profile 2 - Wer -->
         <div class="profile-card" onclick="window.open('https://publuu.com/flip-book/706499/1570874', '_blank')">
             <img src="https://i.pinimg.com/564x/cd/a5/47/cda5474840b687611c165cc5c9c5a0f0.jpg" alt="Wer Profile">
             <div class="profile-name">Wer</div>
         </div>
 
-        <!-- Profile 3 - Meme with black background and "Open Me" caption -->
+        <!-- Profile 3 - Meme -->
         <div class="profile-card" onclick="window.open('https://i.ibb.co/3rMxprZ/Picsart-24-11-04-16-45-44-306.jpg', '_blank')">
             <div class="meme-card">Meme</div>
             <div class="open-me">Open me</div>
+        </div>
+    </div>
+
+    <!-- Information box at the bottom -->
+    <div class="info-box">
+        <!-- Karaoud's Contact Info -->
+        <div class="contact">
+            <strong>Karaoud</strong><br>
+            Number: 51113998<br>
+            Email: rayenkaraood@gmail.com
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/rayen.karaoud.3?mibextid=ZbWKwL" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rayen.karaoud/profilecard/?igsh=ZGl2bHE3MWVkbnd2" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+
+        <!-- Wer's Contact Info -->
+        <div class="contact">
+            <strong>Wer</strong><br>
+            Number: 99940307<br>
+            Email: ademouertani2@gmail.com
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/adem.ouertani.73?mibextid=ZbWKwL" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/ademouertani?igsh=dG5zM2xtZDJjeG14" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+            </div>
         </div>
     </div>
 
