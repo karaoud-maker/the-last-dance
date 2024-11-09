@@ -135,6 +135,20 @@
             height: 24px;
         }
 
+        /* Logo container styling */
+        .logo-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Style for the white version of the additional logo */
+        .white-logo {
+            filter: brightness(0) invert(1); /* Makes the image appear white */
+        }
+
     </style>
 </head>
 <body style="background-image: url('https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg');">
@@ -199,14 +213,12 @@
         </div>
     </div>
 
-    <!-- Website Logo -->
-    <div style="text-align: center; margin-top: 20px;">
+    <!-- Logos side by side -->
+    <div class="logo-container">
+        <!-- Website Logo -->
         <img src="https://i.postimg.cc/3xRsmB06/Screenshot-20241109-090410-Chrome.jpg" alt="The Last Dance Logo" style="width: 100px;">
-    </div>
-
-    <!-- Additional Image at the Bottom -->
-    <div style="text-align: center; margin-top: 10px;">
-        <img src="https://i.postimg.cc/NMg72N52/logo-golden-black-1.png" alt="Additional Image" style="width: 200px;">
+        <!-- Additional Image in White -->
+        <img src="https://i.postimg.cc/NMg72N52/logo-golden-black-1.png" alt="Additional Image in White" class="white-logo" style="width: 100px;">
     </div>
 
 </body>
